@@ -8,8 +8,8 @@
 #include <list>
 
 template <class T>
-void print_container(T) {
-    for (auto i : T) {
+void print_container(const T& container) {
+    for (auto i : container) {
         std::cout << i << " ";
     }
     std::cout << std::endl;
